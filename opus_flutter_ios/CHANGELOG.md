@@ -1,3 +1,7 @@
+## 3.0.1 (arm64-simulator)
+
+* 3.0.1 plus an arm64 iOS Simulator slice; device slice unchanged
+
 ## 3.0.1
 
 * Using new opus.xcframework
