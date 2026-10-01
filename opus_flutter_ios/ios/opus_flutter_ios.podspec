@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'EPNW GmbH' => 'contact@epnw.eu' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'opus_flutter_ios/Sources/opus_flutter_ios/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '13.0'
-  s.vendored_frameworks = 'opus.xcframework'
+  s.vendored_frameworks = 'opus_flutter_ios/opus.xcframework'
   
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

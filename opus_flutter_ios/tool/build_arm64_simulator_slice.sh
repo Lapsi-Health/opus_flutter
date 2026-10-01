@@ -20,7 +20,7 @@ BUILDTYPE_URL=https://raw.githubusercontent.com/xiph/opus/v${OPUS_VERSION}/opus_
 BUILDTYPE_SHA256=138fc685813506de6ec8ac948ecd2f942873cb90910e2e88e1c709737fff9ce3
 MIN_IOS=13.0
 
-XCF="$IOS_DIR/opus.xcframework"
+XCF="$IOS_DIR/opus_flutter_ios/opus.xcframework"
 DEVICE_FW="$XCF/ios-arm64/opus.framework"
 X86_FW="$XCF/ios-x86_64-simulator/opus.framework"
 [ -f "$DEVICE_FW/opus" ] && [ -f "$X86_FW/opus" ] || { echo "Expected the published 3.0.1 slices in $XCF" >&2; exit 1; }
